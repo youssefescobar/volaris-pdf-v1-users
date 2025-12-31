@@ -1,11 +1,13 @@
 1. user server to off load the pdf proccessing to a task queue (rabbitmq, kafka, redis)
 
 todo:
-login
-register
+login, done
+register, done
 profile
 mytasks
 upload pdf
+
+tech: rabbit, mongo, express, s3 bucket for pdfs. 
 
 future (admin): 
 crud for all

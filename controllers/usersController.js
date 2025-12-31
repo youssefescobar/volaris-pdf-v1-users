@@ -70,4 +70,11 @@ const loginUser = async (req, res) => {
 };
 
 
-module.exports = {registerUser, loginUser}
+const myProfile = async (req, res) => {
+    if (!req.user){
+        return res.status(400).json({status: "bad", message: "not logged in"})
+    }
+    return res.status(200).json({status: ok, profile: req.user})
+}
+
+module.exports = {registerUser, loginUser, myProfile}
