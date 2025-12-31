@@ -1,0 +1,13 @@
+1. user server to off load the pdf proccessing to a task queue (rabbitmq, kafka, redis)
+
+users:
+login
+register
+profile
+mytasks
+upload pdf
+
+future (admin): 
+crud for all
+
+2. worker server to pull from task queue and process it (step 2)
